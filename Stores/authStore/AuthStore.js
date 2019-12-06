@@ -23,9 +23,9 @@ class AuthStore {
 
 	loginUser = async (userData, navigation) => {
 		try {
-			const res = await axios.post('http://192.168.43.215:8000/login/', userData);
-			const user = res.data;
-			this.setUser(user.token);
+			// const res = await axios.post('http://192.168.43.215:8000/login/', userData);
+			// const user = res.data;
+			// this.setUser(user.token);
 			navigation.navigate('Dashboard');
 		} catch (error) {
 			console.log(error);
